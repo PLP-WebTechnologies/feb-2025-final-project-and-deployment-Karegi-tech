@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🌈 My Colorful Blog</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a2d9a52ba8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="container nav-container">
+      <h1>🌈 My Blog</h1>
+      <nav id="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+        <button id="theme-toggle" title="Toggle Theme">🌓</button>
+      </nav>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Welcome to the Colorful Side 🌟</h2>
+      <p>Explore life, design, and inspiration in full color.</p>
+    </section>
+
+    <!-- Carousel with Pexels images -->
+    <section class="carousel">
+      <div class="slides">
+        <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sunset over mountains" />
+        <img src="https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=800" alt="Forest pathway" />
+        <img src="https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg?auto=compress&cs=tinysrgb&w=800" alt="City skyline at night" />
+      </div>
+    </section>
+
+    <!-- Subscription Form -->
+    <section class="subscribe">
+      <h3>📬 Subscribe for Weekly Tips!</h3>
+      <form id="subscribe-form">
+        <input type="email" id="email" placeholder="Enter your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+      <p id="form-message"></p>
+    </section>
+  </main>
+
+  <!-- Back to Top Button -->
+  <button id="topBtn" title="Back to top">⬆️</button>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 My Colorful Blog 🌈 | Made with 💖</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

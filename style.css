@@ -1,0 +1,165 @@
+:root {
+    --bg: linear-gradient(to right, #ff9a9e, #fad0c4);
+    --text: #222;
+    --accent: #ff4081;
+    --card-bg: rgba(255, 255, 255, 0.9);
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    transition: all 0.3s ease;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  /* Header & Nav */
+  header {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav a {
+    color: #444;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: var(--accent);
+  }
+  
+  button#theme-toggle {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  /* Carousel */
+  .carousel {
+    margin: 2rem 0;
+  }
+  
+  .slides {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .slides img {
+    width: 100%;
+    animation: slide 12s infinite ease-in-out;
+  }
+  
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+  }
+  
+  /* Subscribe Section */
+  .subscribe {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  .subscribe input {
+    padding: 0.5rem;
+    width: 250px;
+    border: 2px solid var(--accent);
+    border-radius: 8px;
+    margin-right: 0.5rem;
+  }
+  
+  .subscribe button {
+    background: var(--accent);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  /* Back to Top Button */
+  #topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    font-size: 24px;
+    display: none;
+    background: var(--accent);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    nav {
+      display: none;
+      flex-direction: column;
+      background: white;
+      padding: 1rem;
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+  
+    nav.show {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+  
